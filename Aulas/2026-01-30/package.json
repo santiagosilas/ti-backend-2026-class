@@ -1,0 +1,12 @@
+{
+  "name": "revisao",
+  "version": "1.0.0",
+  "description": "Revisao de JS",
+  "license": "MIT",
+  "author": "Silas",
+  "type": "commonjs",
+  "main": "review.js",
+  "scripts": {
+    "dev": "node src/review.js"
+  }
+}
