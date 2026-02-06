@@ -172,6 +172,8 @@ export function adicionar(registro) {
 export function listar() {
   . . .
 }
+
+lstPessoa.push(true);
 ```
 
 🔳 Métodos de Lista
