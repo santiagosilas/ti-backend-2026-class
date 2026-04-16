@@ -1,0 +1,78 @@
+### Configurações Globais
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+### Verifica o status do servidor
+GET {{baseUrl}}/alive
+Accept: {{contentType}}
+
+### Obtém a equipe
+GET {{baseUrl}}/team
+Accept: {{contentType}}
+
+
+### Obtém todas as tarefas
+GET {{baseUrl}}/api/fake_tasks
+Accept: {{contentType}}
+
+### Criar um nova tarefa
+POST {{baseUrl}}/api/fake_tasks
+Content-Type: {{contentType}}
+
+{
+  "title": "Study Javascript",
+  "priority": "high",
+  "isCompleted":false
+}
+
+### Obtém uma tarefa pelo id
+GET {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+Accept: {{contentType}}
+
+### Atualizar uma tarefa
+PUT {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+Content-Type: {{contentType}}
+
+{
+  "title": "Study Typescript",
+  "priority": "low",
+  "isCompleted": true
+}
+
+### Atualizar uma tarefa
+PATCH {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+Content-Type: {{contentType}}
+
+{
+  "title": "Study Typescript",
+  "priority": "low",
+  "isCompleted": true
+}
+
+### Atualizar uma tarefa
+PATCH {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+Content-Type: {{contentType}}
+
+{
+  "title": "Study C#.Net"
+}
+
+### Atualizar uma tarefa
+PATCH {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+Content-Type: {{contentType}}
+
+{
+  "priority": "normal"
+}
+
+### Atualizar uma tarefa
+PATCH {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+Content-Type: {{contentType}}
+
+{
+  "isCompleted": false
+}
+
+
+### Deletar uma tarefa
+DELETE {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
