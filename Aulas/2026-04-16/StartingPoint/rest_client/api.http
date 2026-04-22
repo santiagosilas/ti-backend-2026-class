@@ -20,17 +20,27 @@ POST {{baseUrl}}/api/fake_tasks
 Content-Type: {{contentType}}
 
 {
-  "title": "Study Javascript",
+  "title": "Estudar Alemão",
   "priority": "high",
   "isCompleted":false
 }
 
 ### Obtém uma tarefa pelo id
-GET {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+GET {{baseUrl}}/api/fake_tasks/b6908443-6412-4864-8e8d-dc756b414d23
 Accept: {{contentType}}
 
 ### Atualizar uma tarefa
-PUT {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+PUT {{baseUrl}}/api/fake_tasks/b6908443-6412-4864-8e8d-dc756b414d23
+Content-Type: {{contentType}}
+
+{
+  "title": "Estudar Python",
+  "priority": "normal",
+  "isCompleted": false
+}
+
+### Atualizar uma tarefa
+PATCH {{baseUrl}}/api/fake_tasks/b6908443-6412-4864-8e8d-dc756b414d23
 Content-Type: {{contentType}}
 
 {
@@ -40,17 +50,7 @@ Content-Type: {{contentType}}
 }
 
 ### Atualizar uma tarefa
-PATCH {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
-Content-Type: {{contentType}}
-
-{
-  "title": "Study Typescript",
-  "priority": "low",
-  "isCompleted": true
-}
-
-### Atualizar uma tarefa
-PATCH {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+PATCH {{baseUrl}}/api/fake_tasks/b6908443-6412-4864-8e8d-dc756b414d23
 Content-Type: {{contentType}}
 
 {
@@ -58,11 +58,11 @@ Content-Type: {{contentType}}
 }
 
 ### Atualizar uma tarefa
-PATCH {{baseUrl}}/api/fake_tasks/7de25b7b-894d-4be4-bd61-a129df098f2b
+PATCH {{baseUrl}}/api/fake_tasks/b6908443-6412-4864-8e8d-dc756b414d23
 Content-Type: {{contentType}}
 
 {
-  "priority": "normal"
+  "priority": "low"
 }
 
 ### Atualizar uma tarefa
